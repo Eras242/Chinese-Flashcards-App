@@ -1,0 +1,42 @@
+.zh_displayBox {
+  font-size: 200;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+  width: 50%;
+  margin: 30px 0px;
+  height: 200px;
+  border-radius: 1rem;
+  background: rgba(68, 68, 68, 0.4);
+  outline: 1px solid rgba(255, 0, 0, 1);
+  outline-offset: 20px;
+}
+
+.hanzi {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 1);
+}
+
+.hanzi:hover {
+  color: rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+}
+
+.pinyin {
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.2);
+  margin: 10px;
+}
+
+.meaning {
+  font-size: 15px;
+  font-weight: 200;
+  color: rgba(255, 255, 255, 0.8);
+  background-color: rgb(51, 55, 51);
+  padding: 5px 50px;
+  border-radius: 5px;
+}

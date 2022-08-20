@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter";
+}
+
+body {
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.App {
+  height: 100vh;
+  background-color: rgb(25, 25, 35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background: rgb(25, 28, 31);
+  transition-duration: 0.4s;
+}
+
+.details {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+
+  margin: 10px 0px;
+}
+
+.count {
+  font-size: 10px;
+  display: flex;
+  background-color: rgb(66, 66, 66);
+  padding: 0.5rem;
+  border-radius: 0.33rem;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.btn {
+  color: white;
+  border-radius: 0.5rem;
+  background-color: rgb(66, 66, 66);
+  border-spacing: 5px;
+  transition-duration: 0.3s;
+  border: none;
+}
+
+.boxInfo {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 15px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.tags {
+  display: flex;
+  gap: 5px;
+}
+
+.recent-details {
+  display: flex;
+  flex-direction: column;
+}
+
+#recentStats {
+  font-family: monospace;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.tag {
+  font-family: monospace;
+  font-size: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 3px;
+  padding: 3px 10px;
+}
+
+.statsGraph {
+  color: rgba(255, 255, 255, 0.4);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 60px;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(2px);
+}
+
+.tick {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+svg .tick > text {
+  color: rgba(255, 255, 255, 0.1);
+}
+
+svg .rectangle:hover {
+  opacity: 0.66;
+}
+
+svg rect:hover {
+  opacity: 0.8;
+}
+
+.label-text {
+  text-anchor: middle;
+}
+
+.diff-text {
+  text-anchor: middle;
+}
+
+#check {
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+}

@@ -1,0 +1,100 @@
+.stats--overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(10px);
+}
+
+.stats--container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 800px;
+  max-height: 90%;
+  background: rgba(29, 31, 34, 0.7);
+  backdrop-filter: blur(12px);
+  border-radius: 0.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  z-index: 100;
+}
+
+.stats--container > h2 {
+  margin-top: 50px;
+  margin-bottom: 40px;
+  color: rgba(255, 255, 255, 0.4);
+  font-weight: 200;
+}
+
+.btn.close {
+  position: absolute;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  width: 25px;
+  height: 25px;
+  margin: 15px;
+  align-items: center;
+  background: rgb(31, 33, 38);
+  color: rgba(255, 255, 255, 0.8);
+  outline: 1px solid rgba(255, 255, 255, 0.05);
+  outline-offset: 2px;
+  border-radius: 3px;
+}
+
+.btn.close:hover {
+  background: rgba(76, 76, 76, 0.3);
+  cursor: pointer;
+}
+
+.stats--recent--boxes {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.stats--date {
+  color: white;
+  margin-bottom: 15px;
+  font-weight: 200;
+}
+
+.stats--box {
+  font-size: 11px;
+  font-weight: 200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100px;
+  height: 100px;
+  margin: 5px;
+  border: 1px solid rgb(255, 255, 255, 0.2);
+  border-radius: 5px;
+  backdrop-filter: blur(10px);
+}
+
+.box.detail {
+  font-size: 10px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.4);
+  margin-bottom: 5px;
+}
+.box.info {
+  font-family: monospace;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.stats--difficulty--chart {
+  border: 1px solid rgb(255, 255, 255, 0.2);
+  border-radius: 5px;
+  width: 80%;
+  height: 200px;
+  background-color: rgba(255, 255, 255, 0.06);
+  margin-bottom: 40px;
+}

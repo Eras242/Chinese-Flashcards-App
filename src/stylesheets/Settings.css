@@ -1,0 +1,80 @@
+.settings {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.settings.mode {
+  align-items: center;
+  justify-content: start;
+  gap: 10px;
+}
+
+.settings.details {
+  align-items: center;
+  justify-content: end;
+}
+
+.btn.start {
+  font-size: 11px;
+  background: rgba(92, 208, 92, 1);
+  outline: 1px solid rgba(255, 255, 255, 0.1);
+  outline-offset: 2px;
+  width: 100px;
+  padding: 5px 0px;
+  border-radius: 3px;
+}
+
+.btn.start:hover {
+  background: rgba(78, 176, 78, 0.9);
+  cursor: pointer;
+}
+
+.btn.mode {
+  display: flex;
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.2);
+  background: rgb(66, 66, 66, 0);
+  outline: 1px solid rgba(255, 255, 255, 0.05);
+  outline-offset: 2px;
+  padding: 5px 15px;
+  border-radius: 3px;
+}
+
+.btn.mode.timer {
+  min-width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn.mode.type.session {
+  outline: 1px solid rgb(92, 208, 92, 0.8);
+  color: rgb(92, 208, 92, 0.8);
+}
+
+.btn.stats {
+  font-size: 11px;
+  background: rgb(31, 33, 38);
+  outline: 1px solid rgba(255, 255, 255, 0.1);
+  outline-offset: 2px;
+  padding: 5px 10px;
+  margin-left: 10px;
+  border-radius: 3px;
+}
+
+.btn.stats:hover,
+.btn.stats:focus {
+  margin-left: 15px;
+  background: rgba(76, 76, 76, 0.3);
+  cursor: pointer;
+}
+
+.notif.abrupt {
+  color: rgba(251, 104, 104, 0.8);
+  font-size: 14px;
+  border: 1px solid rgba(253, 91, 91, 0.3);
+  background-color: rgba(253, 91, 91, 0.05);
+  border-radius: 3px;
+  padding: 5px 50px;
+}
