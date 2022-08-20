@@ -4,7 +4,7 @@ import HanziDisplay from "./HanziDisplay";
 import Interface from "./Interface";
 import { useContext } from "react";
 import { ThemeContext } from "../context/ThemeContext";
-import StatsGraph from "./StatsGraph";
+import StatsPopup from "./StatsPopup";
 import { AppContext } from "../context/AppContext";
 
 export default function Main() {
@@ -18,7 +18,7 @@ export default function Main() {
       <Settings />
       <HanziDisplay />
       <Interface />
-      <StatsGraph />
+      <StatsPopup />
     </div>
   );
 }

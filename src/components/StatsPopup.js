@@ -5,7 +5,7 @@ import { AppContext } from "../context/AppContext";
 import { useTransition, animated } from "react-spring";
 import { BsCheck2 } from "react-icons/bs";
 
-export default function StatsGraph() {
+export default function StatsPopup() {
   const { App, data, displayTemp, startData, latestStat } =
     useContext(AppContext);
 
@@ -95,6 +95,7 @@ export default function StatsGraph() {
       .style("fill", "rgba(255,255,255,0.2)")
       .style("font-family", "monospace");
 
+    // New amounts in difficulties (difference in data[i] before the session started and when ended)
     const diffText = svg
       .selectAll(".myTexts")
       .data(data)
@@ -113,7 +114,7 @@ export default function StatsGraph() {
         return y(data[i]) - 30;
       })
       .text(function (v, i) {
-        return v;
+        return v == 0 ? "" : v;
       })
       .style("fill", (v, i) => {
         if (v > 0) {
